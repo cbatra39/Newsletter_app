@@ -53,44 +53,7 @@ app.post("/failure",function (req,res){
 
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
   console.log("server started at 3000");
 });
-
-// API key
-// 8ded5a1344bc00cae0df5b546d03820d-us12
-
-// list id
-// 413121375b
-
-
-
-// const data = {
-//   members: [
-//     {
-//       email_address: email,
-//       status: "subscribed",
-//       merge_fields: {
-//         FNAME: firstName,
-//         LNAME: lastName
-//       }
-//     }
-//   ]
-// }
-// const jsonData = JSON.stringify(data);
-
-  // const url = "https://us12.api.mailchimp.com/3.0/413121375b"
-  
-
-  // const options ={
-  //   method:"POST",
-  //   auth: "chirag:8ded5a1344bc00cae0df5b546d03820d-us12"
-  // }
-  // const httpsRequest = https.request(url, options,function(response){
-  //   response.on("data",function(data){
-  //     console.log(JSON.parse(data));
-  //   });
-  // });
-  // httpsRequest.write(jsonData);
-  // httpsRequest.end();
 
